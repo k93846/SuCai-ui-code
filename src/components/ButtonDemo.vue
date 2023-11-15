@@ -12,7 +12,8 @@
             </div>
             <div class="demo-actions">
                 <!-- 使得点击后出现代码已完成 -->
-                <Button @click="seecode1">查看代码</Button>
+                <Button v-if="codeVisible1" @click="seecode1">隐藏代码</Button>
+                <Button v-else @click="seecode1">查看代码</Button>
             </div>
             <div class="demo-code">
                 <!-- 已完成：封装代码文本，使用字符串 -->
@@ -23,14 +24,16 @@
         </div>
 
         <div class="demo">
-            <h2>示例5</h2>
+            <h2>示例2</h2>
             <div class="demo-component">
                 <Button :theme="`button`" loading>加载按钮</Button>
                 <Button :theme="`button`">加载完毕</Button>
             </div>
             <div class="demo-actions">
                 <!-- 使得点击后出现代码已完成 -->
-                <Button @click="seecode5">查看代码</Button>
+
+                <Button v-if="codeVisible5" @click="seecode5">隐藏代码</Button>         
+                <Button v-else @click="seecode5">查看代码</Button>
             </div>
             <div class="demo-code">
                 <!-- 已完成：封装代码文本，使用字符串 -->
@@ -40,7 +43,7 @@
             </div>
         </div>
         <div class="demo">
-            <h2>示例2</h2>
+            <h2>示例3</h2>
             <div class="demo-component">
                 <Button :theme="`button`" :size="`big`">大大大</Button>
                 <Button :theme="`button`" :size="`normal`">普通</Button>
@@ -59,7 +62,9 @@
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <Button @click="seecode2">查看代码</Button>
+            <Button v-if="codeVisible2" @click="seecode2">隐藏代码</Button>
+
+            <Button v-else @click="seecode2">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -69,7 +74,7 @@
         </div>
     </div>
     <div class="demo">
-        <h2>示例3</h2>
+        <h2>示例4</h2>
         <div class="demo-component">
             <Button :theme="`button`" :level="`main`">主要按钮</Button>
             <Button :theme="`button`" :level="`normal`">普通按钮</Button>
@@ -89,7 +94,9 @@
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <Button @click="seecode3">查看代码</Button>
+            <Button v-if="codeVisible3" @click="seecode3">隐藏代码</Button>
+
+            <Button v-else @click="seecode3">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
@@ -100,7 +107,7 @@
     </div>
 
     <div class="demo">
-        <h2>示例4</h2>
+        <h2>示例5</h2>
         <div class="demo-component">
             <Button :theme="`button`" disabled>禁用按钮</Button>
             <Button :theme="`link`" disabled>禁用链接按钮</Button>
@@ -108,7 +115,9 @@
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <Button @click="seecode4">查看代码</Button>
+            <Button v-if="codeVisible4" @click="seecode4">隐藏代码</Button>
+
+            <Button v-else @click="seecode4">查看代码</Button>
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->

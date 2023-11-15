@@ -2,42 +2,44 @@
     <div class="layout">
         <Topnav :toogleMenuVisible="true" class="nav" />
         <div class="content">
-            <aside v-if="menuVisible">
-                <h2>文档</h2>
-                <ol>
-                    <li>
-                        <router-link to="/doc/intro">介绍</router-link>
-                    </li>
-                </ol>
-                <ol>
-                    <li>
-                        <router-link to="/doc/install">安装</router-link>
-                    </li>
-                </ol>
-                <ol>
-                    <li>
-                        <router-link to="/doc/getstarted">开始使用</router-link>
-                    </li>
-                </ol>
+            <transition name="aside">
+                <aside v-if="menuVisible">
+                    <h2>文档</h2>
+                    <ol>
+                        <li>
+                            <router-link to="/doc/intro">介绍</router-link>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li>
+                            <router-link to="/doc/install">安装</router-link>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li>
+                            <router-link to="/doc/getstarted">开始使用</router-link>
+                        </li>
+                    </ol>
 
 
-                <h2>组件列表</h2>
-                <ol>
+                    <h2>组件列表</h2>
+                    <ol>
 
-                    <li>
-                        <router-link to="/doc/switch">Switch 组件</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/doc/button">Button 组件</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/doc/dialog">Dialog 组件</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/doc/tabs">Tabs 组件</router-link>
-                    </li>
-                </ol>
-            </aside>
+                        <li>
+                            <router-link to="/doc/switch">Switch 组件</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/doc/button">Button 组件</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/doc/dialog">Dialog 组件</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/doc/tabs">Tabs 组件</router-link>
+                        </li>
+                    </ol>
+                </aside>
+            </transition>
             <main>
                 <router-view />
             </main>
@@ -57,18 +59,20 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
-aside{
-    position:relative;
+aside {
+    position: relative;
     z-index: 50;
 }
+
 .layout {
     display: flex;
     flex-direction: column;
     height: 100vh;
+
     >.nav {
         flex-shrink: 0;
     }
+
     >.content {
         flex-grow: 1;
         padding-top: 60px;
@@ -106,16 +110,17 @@ aside {
 
     >h2 {
         margin-bottom: 4px;
-        padding:0 16px;
+        padding: 0 16px;
     }
 
     >ol {
         >li {
-            >a{
+            >a {
                 display: block;
-                padding:4px 16px ;
+                padding: 4px 16px;
                 text-decoration: none;
             }
+
             .router-link-active {
                 background: white;
             }
@@ -125,5 +130,21 @@ aside {
 
 main {
     overflow: auto;
+}
+
+.aside-enter-from {
+    transform: translateX(-150px);
+}
+
+.aside-enter-active {
+    transition: all 0.7s;
+}
+
+.aside-leave-to {
+    transform: translateX(-150px);
+}
+
+.aside-leave-active {
+    transition: all 0.7s;
 }
 </style>

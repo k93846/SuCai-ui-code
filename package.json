@@ -1,8 +1,8 @@
 {
-  "name": "SuCai-ui",
+  "name": "su-cai-ui",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/SuCai-ui.umd.cjs",
+  "main": "dist/su-cai-ui.umd.cjs",
   "files": [
     "dist/*"
   ],

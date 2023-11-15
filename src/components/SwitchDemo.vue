@@ -8,7 +8,8 @@
       </div>
       <div class="demo-actions">
         <!-- 使得点击后出现代码已完成 -->
-        <Button @click="seeCode1">查看代码</Button>
+        <Button v-if="codeVisible1" @click="seeCode1">隐藏代码</Button>
+        <Button v-else @click="seeCode1">查看代码</Button>
       </div>
       <div class="demo-code">
         <!-- 已完成：封装代码文本，使用字符串 -->
@@ -26,7 +27,8 @@
         <Switch2Demo></Switch2Demo>
       </div>
       <div class="demo-actions">
-        <Button @click="seeCode2">查看代码</Button>
+        <Button v-if="codeVisible2" @click="seeCode2">隐藏代码</Button>
+        <Button v-else @click="seeCode2">查看代码</Button>
       </div>
       <div class="demo-code">
         <article class="markdown-body">

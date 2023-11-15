@@ -13,7 +13,9 @@
         </div>
         <div class="demo-actions">
             <!-- 使得点击后出现代码已完成 -->
-            <Button @click="seecode1">查看代码</Button>
+            <Button v-if="codeVisible1" @click="seecode1">隐藏代码</Button>
+            <Button v-else @click="seecode1">查看代码</Button>
+
         </div>
         <div class="demo-code">
             <!-- 已完成：封装代码文本，使用字符串 -->
