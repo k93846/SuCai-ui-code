@@ -16,9 +16,8 @@ export default {
     console.log('app.vue中menuVisible的值是' + menuVisible.value)
     provide('menuVisible', menuVisible)
     router.afterEach(() => {
-      if (width <= 500) { menuVisible.value = false; }
+      setTimeout(() => { if (width <= 500) { menuVisible.value = false; } }, 10)
     })
-
   }
 }
 </script>

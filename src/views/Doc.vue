@@ -137,7 +137,7 @@ main {
 }
 
 .aside-enter-active {
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 .aside-leave-to {
