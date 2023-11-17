@@ -59,10 +59,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-aside {
-    position: relative;
-    z-index: 50;
-}
+
 
 .layout {
     display: flex;
@@ -107,6 +104,7 @@ aside {
     left: 0;
     padding-top: 70px;
     height: 100%;
+    z-index: 50;
 
     >h2 {
         margin-bottom: 4px;
@@ -147,4 +145,7 @@ main {
 .aside-leave-active {
     transition: all 0.7s;
 }
+
+
+
 </style>
