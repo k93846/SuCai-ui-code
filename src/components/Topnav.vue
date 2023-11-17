@@ -2,8 +2,9 @@
     <div>
         <div class="topnav">
             <router-link to="/" class="logo">
+               
                 <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-wangguan"></use>
+                    <use xlink:href="#icon-icon-test"></use>
                 </svg>
             </router-link>
             <ul class="menu">
@@ -86,8 +87,8 @@ $color: #007974;
         top: 50%;
         transform: translateY(-50%);
         display: none;
-        background: fade-out(black,0.9);
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
 
@@ -107,5 +108,4 @@ $color: #007974;
             display: inline-block;
         }
     }
-}
-</style>
+}</style>

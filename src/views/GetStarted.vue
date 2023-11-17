@@ -1,5 +1,5 @@
 <template>
-  <article class="markdown-body">
+  <article class="markdown-body" style="background-color: none;background: rgba(255,255,255,0.25);">
     <h1>
       开始使用
     </h1>

@@ -1,5 +1,5 @@
 <template>
-    <article class="markdown-body">
+    <article class="markdown-body" style="background-color: none;background: rgba(255,255,255,0.25);">
         <h1>介绍</h1>
         <p>素彩 UI 是一款基于 Vue 3 、JavaScript 和 VueRouter4 的 UI 组件库。</p>
         <p>这款组件库其实是我为了总结自己在 HTML5 、 CSS3 、Sass 、JavaScript 和 Vue3 全家桶技术经验而写的，全程由我亲手编写，不引用其他组件库，包括你现在看到的这个官网也几乎都是我自己写的。</p>

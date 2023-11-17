@@ -8,6 +8,8 @@ import Tabs from '../components/TabsDemo.vue'
 import Intro from '../views/Intro.vue'
 import GetStarted from '../views/GetStarted.vue'
 import Install from '../views/Install.vue'
+import Background from '../views/Doc-background.vue'
+import Sidebar from '../views/Doc-sidebar.vue'
 
 
 const routes = [
@@ -17,7 +19,8 @@ const routes = [
     },
     {
         path: '/doc',
-        component: Doc, children: [
+        component: Doc, 
+        children: [
             { path: 'switch', component: Switch },
             { path: 'button', component: Button },
             { path: 'dialog', component: Dialog },
@@ -26,11 +29,17 @@ const routes = [
             { path: 'intro', component: Intro },
             { path: 'getstarted', component: GetStarted },
             { path: 'install', component: Install },
-
-
-
         ]
     },
+    {
+        path:'/background',
+        component:Background,
+    },
+    {
+        path:'/sidebar',
+        component:Sidebar,
+    },
+
 
 
 ]
