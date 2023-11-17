@@ -15,12 +15,12 @@
                     fill="#06C776" />
             </svg>
             <div class="bolang3and4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100vm" viewBox="0 0 1609 412" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100vw" viewBox="0 0 1609 412" fill="none">
                     <path
                         d="M1009.72 148.521C1305.12 98.8401 1510.53 248.814 1609 280.261V412H0V22.3645C87.5038 -33.0107 331.86 27.7699 404.036 61.4395C731.431 214.168 876.775 181.456 1009.72 148.521Z"
                         fill="#3BF5A7" />
                 </svg>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100vm" viewBox="0 0 1473 260" fill="none">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100vw" viewBox="0 0 1473 260" fill="none">
                     <path
                         d="M548.629 93.7271C278.197 62.3748 90.1438 157.019 0 176.864V260H1473V14.1135C1392.89 -20.832 1169.19 17.5247 1103.12 38.7725C803.393 135.154 670.334 114.511 548.629 93.7271Z"
                         fill="#66DFAC" />

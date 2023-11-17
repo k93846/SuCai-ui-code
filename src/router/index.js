@@ -8,8 +8,6 @@ import Tabs from '../components/TabsDemo.vue'
 import Intro from '../views/Intro.vue'
 import GetStarted from '../views/GetStarted.vue'
 import Install from '../views/Install.vue'
-import Background from '../views/Doc-background.vue'
-import Sidebar from '../views/Doc-sidebar.vue'
 
 
 const routes = [
@@ -31,14 +29,7 @@ const routes = [
             { path: 'install', component: Install },
         ]
     },
-    {
-        path:'/background',
-        component:Background,
-    },
-    {
-        path:'/sidebar',
-        component:Sidebar,
-    },
+    
 
 
 
