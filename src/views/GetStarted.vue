@@ -8,7 +8,7 @@
     <p>然后在你的代码中写入下面的代码</p>
     <pre><code>import {Button, Tabs, Switch, Dialog} from "su-cai-ui";
 import "su-cai-ui/dist/style.css";</code></pre>
-    就可以使用我提供的组件了。
+    就可以使用我提供的组件了。（点击左上角呼出菜单查看组件预览吧！）
 
     <h2>Vue 单文件组件</h2>
     <p>代码示例：</p>

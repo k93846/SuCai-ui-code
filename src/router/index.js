@@ -8,7 +8,7 @@ import Tabs from '../components/TabsDemo.vue'
 import Intro from '../views/Intro.vue'
 import GetStarted from '../views/GetStarted.vue'
 import Install from '../views/Install.vue'
-
+import Test from '../views/Test.vue'
 
 const routes = [
     {
@@ -29,7 +29,10 @@ const routes = [
             { path: 'install', component: Install },
         ]
     },
-    
+    {
+        path: '/test',
+        component: Test
+    },
 
 
 
