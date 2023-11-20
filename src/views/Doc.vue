@@ -52,11 +52,11 @@
                     </ol>
                     <ol class="side-footer">
                         <div>
-                            <a href="https://github.com/k93846/SuCai-ui-code" style="text-decoration: none;">
+                            <a href="https://gitee.com/k93846/su-cai-ui-code" style="text-decoration: none;">
                                 <svg>
                                     <use xlink:href="#icon-zhuandao"></use>
                                 </svg>
-                                github源码
+                                gitee源码
                             </a>
                         </div>
                     </ol>
