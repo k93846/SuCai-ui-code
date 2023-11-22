@@ -96,7 +96,7 @@ export default {
     font-weight: 500;
     line-height: normal;
     position: absolute;
-    top: 450px;
+    top: 75vh;
 
     div {
         &:hover {
